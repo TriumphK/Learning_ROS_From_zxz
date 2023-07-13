@@ -1,0 +1,6 @@
+<launch>
+    <!-- add node -->
+    <node pkg = "turtlesim" type="turtlesim_node" name = "turtle_GUI" />
+    <node pkg = "turtlesim" type="turtle_teleop_key" name = "turtle_KEY" />
+    <node pkg = "hello_vscode" type = "hello_ros_c" name = "sayhello" output = "screen" />
+</launch>
