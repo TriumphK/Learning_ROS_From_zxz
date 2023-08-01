@@ -1,0 +1,9 @@
+<library path="lib/libplus">
+    <class type="dbx_plugins_ns::SanBian" base_class_type="dbx_base_ns::Dbx_Base">
+        <description>Sanbian</description>
+    </class>
+
+    <class type="dbx_plugins_ns::SiBian" base_class_type="dbx_base_ns::Dbx_Base">
+        <description>Sibian</description>
+    </class>
+</library>

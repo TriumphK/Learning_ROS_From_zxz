@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="nodelet" type="nodelet" args="manager" name="xulaoshi" output="screen" />
+    <node pkg="nodelet" type="nodelet" args="load nodelet_test/MyPlus xulaoshi" name="pw" output="screen" >
+        <param name="value" value="100" />
+    </node>
+    <node pkg="nodelet" type="nodelet" args="load nodelet_test/MyPlus xulaoshi" name="sf" output="screen" >
+        <param name="value" value="-50" />
+        <remap from="/sf/in" to="/pw/out" />
+    </node>
+</launch>
